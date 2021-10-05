@@ -1,5 +1,5 @@
 # Criando MVC + Web API .Net Core 
-## Projeto ASP .NET Core Web API para gerenciar e validar uma tela em cshtml com informações de assinantes.
+## Projeto ASP .NET Core MVC + WebAPI
 
 
 ## Autor
