@@ -14,23 +14,23 @@ namespace WebApplication1.Repository
         {
             contexto = _contexto;
         }
-        public void AdicionarAssinante(Assinante assinante)
+        public void AdicionarAssinante(AssinanteModel assinante)
         {
             contexto.Add(assinante);
             contexto.SaveChanges();
         }
 
-        public Assinante RetornarPorId(int id)
+        public AssinanteModel RetornarPorId(int id)
         {
             return contexto.Assinante.Find(id);            
         }
 
-        public IEnumerable<Assinante> RetornaTodos()
+        public IEnumerable<AssinanteModel> RetornaTodos()
         {
             return contexto.Assinante.ToList();
         }
 
-        public Assinante ValidarEntrada(Assinante assinante)
+        public AssinanteModel ValidarEntrada(AssinanteModel assinante)
         {
             return assinante;
         }

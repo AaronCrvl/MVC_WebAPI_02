@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using WebApplication1.Models;
+using WebApplication1.Views;
 
 namespace WebApplication1.Controllers
 {
@@ -11,9 +9,15 @@ namespace WebApplication1.Controllers
     {
         [HttpGet]
         [Route("[action]")]
-        public IActionResult Index()
+        public IActionResult PaginaInicial(PaginaInicialModel modelo)
         {
-            return View();
+            return View(modelo);
+        }
+
+        [HttpPost]
+        public IActionResult OnPost(AssinanteModel modelo)
+        {
+            return View(modelo);
         }
     }
 }

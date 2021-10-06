@@ -10,6 +10,6 @@ namespace WebApplication1.Models
     {
         public AssinanteDbContext(DbContextOptions<AssinanteDbContext> options) : base(options) {}
 
-        public DbSet<Assinante> Assinante { get; set; }
+        public DbSet<AssinanteModel> Assinante { get; set; }
     }
 }

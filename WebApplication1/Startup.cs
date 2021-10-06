@@ -43,18 +43,14 @@ namespace WebApplication1
             }
             else
             {
+                app.UseExceptionHandler("/Error");
                 app.UseHsts();
             }
 
+            app.UseStaticFiles();
             app.UseHttpsRedirection();
-            app.UseMvc();/* routes => 
-            {
-                routes.MapRoute(
-                name: "default_route",
-                template: "{controller}/{action}/{id?}",
-                defaults: new { controller = "Home", action = "Index" }
-                );
-            });*/
+            app.UseMvc();            
+            app.UseCookiePolicy();
         }
     }
 }

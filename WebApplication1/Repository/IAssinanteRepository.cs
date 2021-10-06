@@ -8,9 +8,9 @@ namespace WebApplication1.Repository
 {
     public interface IAssinanteRepository
     {
-        Assinante ValidarEntrada(Assinante assinante);
-        void AdicionarAssinante(Assinante assinante);
-        IEnumerable<Assinante> RetornaTodos();
-        Assinante RetornarPorId(int id);
+        AssinanteModel ValidarEntrada(AssinanteModel assinante);
+        void AdicionarAssinante(AssinanteModel assinante);
+        IEnumerable<AssinanteModel> RetornaTodos();
+        AssinanteModel RetornarPorId(int id);
     }
 }

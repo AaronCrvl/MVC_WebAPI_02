@@ -19,13 +19,13 @@ namespace WebApplication1.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Assinante> RetornarTodos()
+        public IEnumerable<AssinanteModel> RetornarTodos()
         {
             return AssinanteRepo.RetornaTodos();
         }
 
         [HttpGet("{id}")]
-        public IActionResult RetornarPorId(long Id)
+        public IActionResult RetornarPorId(int Id)
         {
             var UserAx = AssinanteRepo.RetornarPorId(Id);
             if (UserAx == null)
