@@ -1,5 +1,5 @@
 # Criando Sistema Web
-## Projeto ASP .NET Core MVC + WebAPI
+## Projeto ASP .NET Core WebAPI
 
 
 ## Autor
