@@ -13,11 +13,4 @@ C:\Users\aaron\source\repos\WebAPI_02\WebApplication1\obj\Debug\netcoreapp2.1\We
 C:\Users\aaron\source\repos\WebAPI_02\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.dll
 C:\Users\aaron\source\repos\WebAPI_02\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.pdb
 C:\Users\aaron\source\repos\WebAPI_02\WebApplication1\bin\Debug\netcoreapp2.1\WebApplication1.Views.dll
-C:\Users\aaron\source\repos\WebAPI_02\WebApplication1\bin\Debug\netcoreapp2.1\WebApplication1.Views.pdb
-C:\Users\aaron\source\repos\WebAPI_02\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.TagHelpers.input.cache
-C:\Users\aaron\source\repos\WebAPI_02\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.TagHelpers.output.cache
-C:\Users\aaron\source\repos\WebAPI_02\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.RazorCoreGenerate.cache
-C:\Users\aaron\source\repos\WebAPI_02\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.RazorTargetAssemblyInfo.cs
-C:\Users\aaron\source\repos\WebAPI_02\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.Views.pdb
 C:\Users\aaron\source\repos\WebAPI_02\WebApplication1\obj\Debug\netcoreapp2.1\WebApplication1.csproj.CopyComplete
-C:\Users\aaron\source\repos\WebAPI_02\WebApplication1\obj\Debug\netcoreapp2.1\Razor\Views\Home\PaginaInicial.g.cshtml.cs

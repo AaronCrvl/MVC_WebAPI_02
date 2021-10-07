@@ -5,11 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Views\Index.cshtml" />
+    <Compile Remove="Views\**" />
+    <Content Remove="Views\**" />
+    <EmbeddedResource Remove="Views\**" />
+    <None Remove="Views\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Views\Home\PaginaInicial.cshtml" />
     <None Include="wwwroot\css\IndexStyle.css" />
   </ItemGroup>
 
@@ -17,10 +19,6 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Pages\" />
   </ItemGroup>
 
 </Project>

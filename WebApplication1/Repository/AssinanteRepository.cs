@@ -1,9 +1,9 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebApplication1.Models;
-using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplication1.Repository
 {
@@ -16,13 +16,46 @@ namespace WebApplication1.Repository
         }
         public void AdicionarAssinante(AssinanteModel assinante)
         {
-            contexto.Add(assinante);
-            contexto.SaveChanges();
+            using (var conexao = contexto.Database.BeginTransaction())
+            {
+                try
+                {
+                    contexto.Assinante.Add(assinante);
+                    conexao.Commit();
+                    contexto.SaveChanges();             
+                }
+                catch (Exception e)
+                {
+                    conexao.Rollback();
+                    throw e;
+                }
+            }
         }
 
         public AssinanteModel RetornarPorId(int id)
         {
-            return contexto.Assinante.Find(id);            
+            return contexto.Assinante.Find(id);
+        }
+
+        public AssinanteModel CancelarAssinante(int id)
+        {
+            using (var conexao = contexto.Database.BeginTransaction())
+            {
+                try
+                {
+                    AssinanteModel UsuarioRemover = (AssinanteModel)contexto.Find(typeof(AssinanteModel), id);
+                    UsuarioRemover.DataCancelamento = DateTime.UtcNow;
+                    UsuarioRemover.Ativo = false;
+                    contexto.SaveChanges();                    
+                    return UsuarioRemover;
+                }
+                catch (Exception e)
+                {
+                    conexao.Rollback();
+                    throw e;
+                }
+            }
+            
         }
 
         public IEnumerable<AssinanteModel> RetornaTodos()

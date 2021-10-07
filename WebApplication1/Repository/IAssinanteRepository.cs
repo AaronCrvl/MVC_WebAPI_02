@@ -12,5 +12,6 @@ namespace WebApplication1.Repository
         void AdicionarAssinante(AssinanteModel assinante);
         IEnumerable<AssinanteModel> RetornaTodos();
         AssinanteModel RetornarPorId(int id);
+        AssinanteModel CancelarAssinante(int id);
     }
 }
