@@ -1,4 +1,7 @@
 # WEB API 02 - Projeto ASP .NET Core WebAPI - Documentação API
+
+Contato: carvalhosins@gmail.com
+
 ### OBS
 
 Este arquivo precisa do appsettings.json para conexão com o banco de dados.
